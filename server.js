@@ -35,7 +35,7 @@ mongoose.connect("mongodb://localhost/newscraper", {
 
 // Routes
 
-// A GET route for scraping the echojs website
+// A GET route for scraping the [insert] website
 app.get("/scrape", function(req, res) {
   // First, we grab the body of the html with request
   axios.get("http://www.webdesignernews.com/").then(function(response) {
@@ -86,7 +86,7 @@ app.get("/articles", function(req, res) {
     });
 });
 
-// Route for grabbing a specific Article by id, populate it with it's note
+// Route for grabbing a specific Article by id, populate it with its note
 app.get("/articles/:id", function(req, res) {
   // Using the id passed in the id parameter, prepare a query that finds the matching one in our db...
   db.Article

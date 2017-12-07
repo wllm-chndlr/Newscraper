@@ -1,38 +1,29 @@
+html {
+  background-color: rgb(194, 194, 194);
+}
+
 body { 
-  background-color: #F2F6D0 
+  margin: auto;
+  background-color: #305973;
+  color: #DED5C4;
+  font-family: 'Pathway Gothic One', sans-serif;
+  /* max-width: 80%; */
 }
 
-#wrapper {
-  width: 960px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 5%;
+nav {
+  padding: 20px;
+  background-color: #EF7E56;
 }
 
-#articles {
-  display: inline-block;
-  overflow: auto;
-  width: 60%;
-  height: 700px;
+p {
+  font-size: 20px;
 }
 
-#notes {
-  float: right;
-  width: 30%;
+#scraped, #saved {
+  min-height: 900px;
 }
 
-textarea, input {
-  display: block;
-  width: 100%;
-  background-color: #FCF5C7;
-}
 
-input {
-  height: 36px;
-  font-size: 24px;
-}
-
-textarea {
-  height: 200px;
-  font-size: 18px;
+footer.page-footer {
+  background-color: #EF7E56;
 }
