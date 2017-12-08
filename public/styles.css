@@ -16,6 +16,10 @@ nav {
   color: #DED5C4;
 }
 
+a {
+  color: #fff;
+}
+
 a.brand-logo {
   font-size: 40px;
 }
@@ -24,12 +28,16 @@ div#articles {
   margin-bottom: 30px;
 }
 
+div#notes {
+  color: #444;
+}
+
 p {
   font-size: 20px;
 }
 
 #scraped,
-#saved {
+#savedArticlesDiv {
   min-height: 900px;
 }
 
