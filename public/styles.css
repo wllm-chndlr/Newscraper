@@ -1,28 +1,37 @@
 html {
-  background-color: rgb(194, 194, 194);
+  background-color: rgb(228, 228, 228);
 }
 
-body { 
+body {
   margin: auto;
-  background-color: #305973;
-  color: #DED5C4;
+  /* background-color: #305973; */
+  color: #fff;
   font-family: 'Pathway Gothic One', sans-serif;
   /* max-width: 80%; */
 }
 
 nav {
-  padding: 20px;
+  padding: 30px;
   background-color: #EF7E56;
+  color: #DED5C4;
+}
+
+a.brand-logo {
+  font-size: 40px;
+}
+
+div#articles {
+  margin-bottom: 30px;
 }
 
 p {
   font-size: 20px;
 }
 
-#scraped, #saved {
+#scraped,
+#saved {
   min-height: 900px;
 }
-
 
 footer.page-footer {
   background-color: #EF7E56;

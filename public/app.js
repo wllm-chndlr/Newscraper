@@ -3,14 +3,15 @@ $.getJSON("/articles", function(data) {
   // For each one
   for (var i = 0; i < data.length; i++) {
     // Display the apropos information on the page
-    $("#articles").append(
-      "<p data-id='" + data[i]._id + "'>" + data[i].title + "<br />" + "http://www.webdesignernews.com" + data[i].link + "</p>");
+    $("#articles").append("<div class='card-panel blue-grey darken-1'>" + "<span class='white-text'>" + "<p data-id='" + data[i]._id + "'>" + data[i].title + "<br />" + "http://www.webdesignernews.com" + data[i].link + "</p>" + "</span>" + "</div>");
+
 
     // $("#articles").append(function() {
     //   return 
     //   "<b>This p element has index " + n + ".</b>";
 
     // });
+
 
 
   }
