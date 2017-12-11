@@ -87,7 +87,7 @@ app.get("/articles", function(req, res) {
     });
 });
 
-// Route for grabbing a specific Article by id, populate it with it's note
+// Route for grabbing a specific Article by id, populate it with its note
 app.get("/articles/:id", function(req, res) {
   // Using the id passed in the id parameter, prepare a query that finds the matching one in our db...
   db.Article
@@ -125,7 +125,6 @@ app.post("/articles/:id", function(req, res) {
     });
 });
 
-// NEW NEW NEW
 // Route for deleting an Article's associated Note
 app.post("/articles/:id", function(req, res) {
   // Create a new note and pass the req.body to the entry
@@ -146,7 +145,6 @@ app.post("/articles/:id", function(req, res) {
       res.json(err);
     });
 });
-
 
 // Start the server
 app.listen(PORT, function() {
