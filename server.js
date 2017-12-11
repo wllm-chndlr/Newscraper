@@ -12,7 +12,10 @@ var cheerio = require("cheerio");
 // Require all models
 var db = require("./models");
 
-var PORT = 3000;
+// var PORT = 3000;
+var PORT = process.env.PORT || 3000;
+
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/newscraper";
 
 // Initialize Express
 var app = express();
@@ -29,7 +32,7 @@ app.use(express.static("public"));
 // Set mongoose to leverage built in JavaScript ES6 Promises
 // Connect to the Mongo DB
 mongoose.Promise = Promise;
-mongoose.connect("mongodb://localhost/newscraper", {
+mongoose.connect(MONGODB_URI, {
   useMongoClient: true
 });
 
@@ -55,13 +58,11 @@ app.get("/scrape", function(req, res) {
         .children("a")
         .attr("href");
 
-      console.log(result.title);
-
       // Create a new Article using the `result` object built from scraping
       db.Article.create(result)
         .then(function(dbArticle) {
           // If we were able to successfully scrape and save an Article, send a message to the client
-          res.send("Scrape Complete");
+          res.send("Scrape complete.");
         })
         .catch(function(err) {
           // If an error occurred, send it to the client

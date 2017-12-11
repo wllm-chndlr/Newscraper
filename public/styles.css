@@ -1,0 +1,70 @@
+body { 
+  background-color: #444 ; 
+  color: rgb(184, 184, 184);
+  font-family: 'Pathway Gothic One',
+  sans-serif;
+}
+
+nav {
+  padding: 30px;
+  background-color: #EF7E56;
+  color: #DED5C4;
+}
+
+a.brand-logo {
+  font-size: 40px;
+}
+
+div#articles, div#notes {
+  margin-top: 10px;
+}
+
+div#notes {
+  margin-bottom: 50px;
+}
+
+div.container.main {
+  margin-bottom: 60px;
+}
+
+p {
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+a {
+  color: rgb(124, 124, 124);
+}
+
+#articles {
+  display: inline-block;
+}
+
+textarea, input {
+  display: block;
+  width: 100%;
+  background-color: #444;
+}
+
+input {
+  height: 36px;
+  font-size: 24px;
+}
+
+textarea {
+  height: 200px;
+  font-size: 18px;
+}
+
+footer.page-footer {
+  background-color: #EF7E56;
+  margin-top: 30px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+div.footer-copyright {
+  padding-top: 0px;
+}

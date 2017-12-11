@@ -3,47 +3,41 @@
   <head>
     <meta charset="UTF-8">
     <title>Newscraper</title>
-    <style>
-      body { background-color: #444 ; color: rgb(184, 184, 184)}
-      #wrapper {
-        width: 960px;
-        margin-left: auto;
-        margin-right: auto;
-        padding-top: 5%;
-      }
-      #articles {
-        display: inline-block;
-        /* overflow: auto; */
-        width: 60%;
-        height: 700px;
-      }
-      #notes {
-        float: right;
-        width: 30%;
-      }
-      textarea, input {
-        display: block;
-        width: 100%;
-        background-color: #444;
-      }
-      input {
-        height: 36px;
-        font-size: 24px;
-      }
-      textarea {
-        height: 200px;
-        font-size: 18px;
-      }
-    </style>
+      <!-- Compiled and minified CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+      <!-- Google font(s) -->
+      <link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One" rel="stylesheet">
+      <link rel="stylesheet" href="styles.css" media="screen" title="no title">
   </head>
   <body>
-    <div id="wrapper">
-      <h1>Newscraper</h1>
-      <h2><i>Web development edition</i></h2>
-      <div id="articles"></div>
-      <div id="notes"></div>
+
+    <nav class="nav-extended">
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo grey-text text-lighten-4 hide-on-med-and-down">Newscraper: Web development edition</a>
+      </div>
+    </nav>
+
+    <div class="container main">
+      <p id="instr"><em>Click on an article title to leave a comment, or view previous comments.</em></p>
+      <button><a href="/scrape">Scrape new articles</a></button>
+      <div class="row">
+        <div class="col m7 s12" id="articles"></div>
+        <div class="col m5 s12" id="notes"></div>
+      </div>
     </div>
+
+    <footer class="page-footer">
+      <div class="footer-copyright">
+        <div class="container">
+          © 2017 William Chandler
+          <a class="grey-text text-lighten-4 right" href="https://github.com/wllm-chndlr/Newscraper">Github Repo</a>
+        </div>
+      </div>
+    </footer>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <script src="app.js"></script>
   </body>
 </html>
